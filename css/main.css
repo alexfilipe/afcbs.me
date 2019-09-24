@@ -143,6 +143,19 @@ i { font-style: italic; }
     top: 40px;
 }
 
+#main-header.fixed {
+    width: 200px;
+    position: fixed;
+    margin: 0;
+    top: 0;
+}
+
+@media (max-width: 800px) {
+    #main-header.fixed {
+        width: 25%;
+    }
+}
+
 #main-header h1 {
     letter-spacing: 0;
     word-spacing: 999px;
