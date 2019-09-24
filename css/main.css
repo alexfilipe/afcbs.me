@@ -37,7 +37,6 @@ h2 {
     text-align: center;
 }
 
-
 h3 {
     font-weight: bold;
     font-size: 18px;
@@ -46,8 +45,8 @@ h3 {
     text-align: center;
 }
 
-h3:before { content: "------- "; font-weight: normal; }
-h3:after { content: " -------"; font-weight: normal; }
+h3:before { content: "---- "; font-weight: normal; }
+h3:after { content: " ----"; font-weight: normal; }
 
 h4 {
     font-weight: bold;
@@ -82,7 +81,7 @@ i { font-style: italic; }
 }
 .experience-list p {
     margin-left: 15px;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 15px;
 }
 
@@ -94,7 +93,7 @@ i { font-style: italic; }
 
 .experience-sublist {
     margin: 0 0 15px 15px;
-    font-size: 12px;
+    font-size: 13px;
 }
 .experience-sublist li {
     margin-top: 0;
@@ -103,14 +102,29 @@ i { font-style: italic; }
 }
 
 .column-sublist {
-    margin: 0 0 15px 15px;
+    margin: 0 0 15px 0;
     font-size: 12px;
 }
-.column-sublist > div {
-    padding-right: 7%;
-}
+
 .column-sublist > div:last-child {
     padding-right: 0;
+}
+
+.skill-list {
+    margin-bottom: 15px;
+}
+
+.skill-list .col-sm-1 {
+    padding-left: 0;
+}
+
+
+.lang-label { font-size:  12px; color: rgb(105, 117, 88); }
+.level-bars {
+    text-align: right;
+}
+.gray {
+    color: rgba(105, 117, 88, 0.5);
 }
 
 #main-content section {
@@ -136,7 +150,7 @@ i { font-style: italic; }
     width: 25%;
     background: #cfcfcf;
     background: url(../img/bahai-haifa.jpg);
-    height: 460px;
+    height: 520px;
     background-size: cover;
     background-position: bottom center;
     position: absolute;
@@ -202,7 +216,7 @@ i { font-style: italic; }
 }
 
 #main-content {
-    min-height: 460px;
+    min-height: 520px;
     padding: 25px;
     padding-bottom: 10px;
     margin-left: 25%;
