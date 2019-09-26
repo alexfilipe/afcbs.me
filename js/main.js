@@ -1,11 +1,19 @@
+// Fixed sidebar on scroll for smaller
 window.onload = function() {
-    var sidebar = document.getElementById('main-header');
-    var offset = sidebar.getBoundingClientRect().top;
+    var sidebar = document.getElementById("main-header");
+    var y = window.scrollY;
+    var stop = 65;
+
+    if (window.innerWidth <= 736) stop = 45;
+    if (y > stop) sidebar.className = "fixed";
 
     window.onscroll = function() {
-        var y = window.scrollY;
+        if (window.innerWidth <= 736) stop = 45;
+        else stop = 65;
 
-        if (y >= offset) sidebar.className = 'fixed';
+        y = window.scrollY;
+
+        if (y > stop) sidebar.className = "fixed";
         else sidebar.className = "";
     }
 }
