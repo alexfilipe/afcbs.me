@@ -416,6 +416,7 @@ h6 {
 @media(max-width: 355px) {
     #navigation {
         font-size: 12px;
+        line-height: 15px;
     }
 }
 
@@ -437,7 +438,7 @@ h6 {
 /* Experience Section */
 
 .skills h3 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .experience-list > li {
@@ -512,6 +513,8 @@ h6 {
     h5 .period {
         line-height: 15px;
     }
+
+
 }
 
 @media(max-width: 685px) {
@@ -519,6 +522,7 @@ h6 {
     .experience h4 {
         line-height: 22px;
     }
+
 }
 @media(max-width: 665px){
     .skill-list {
@@ -542,7 +546,23 @@ h6 {
 
 }
 
-@media (max-width: 485px) {
+@media(max-width: 574px) {
+
+    .skills h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .skill-list {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 485px) {
+    .experience-list > li {
+        margin-bottom: 20px;
+    }
+
     .period:before {
         content: none;
     }
@@ -642,4 +662,88 @@ h6 {
 
 .music > section {
     margin-bottom: 10px !important;
+}
+.music h4 {
+    margin-bottom: 5px;
+}
+
+.conducting p {
+    margin-left: 29%;
+}
+.conducting .img-highlights {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 701px) {
+    .conducting p {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 578px) {
+    .piano .experience-sublist {
+        font-size: 12px;
+    }
+    .piano .img-highlights, .violin .img-highlights {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .piano img {
+        height: 85px;
+        margin-right: -6px;
+    }
+    .music-videos li {
+        margin-bottom: -5px;
+    }
+
+    .violin img {
+        height: 100px;
+        margin-right: -6px;
+    }
+
+    .conducting .img-highlights {
+        float: left;
+        width: 30%;
+        margin-right: 20px;
+        margin-left: 0;
+        padding: 0;
+        text-align: right;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 400px) {
+    .piano .img-highlights {
+        text-align: left;
+    }
+    .piano .hidden {
+        display: none;
+    }
+    .piano img {
+        height: 120px;
+    }
+
+    .violin img {
+        height: 90px;
+    }
+    .conducting .img-highlights {
+        width: 43%;
+    }
+}
+@media (max-width: 370px) {
+    .piano .img-highlights {
+        text-align: center;
+    }
+    .piano .hidden {
+        display: none;
+    }
+    .piano img {
+        height: 100px;
+    }
+    .violin img {
+        height: 75px;
+    }
 }
