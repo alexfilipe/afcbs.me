@@ -79,14 +79,17 @@ h4 a {
 }
 
 h5 {
-    color: #697558;
-    color: #46563B;
+    /* color: #697558; */
+    /* color: #46563B; */
     /* color: #536646; */
-    /* color: #688058; */
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 10px;
     padding-left: 0;
+}
+
+h5, h5 a:link, h5 a:visited {
+    color: #536646;
 }
 
 h6 {
@@ -139,8 +142,6 @@ h6 {
     -ms-transform: translateY(-55%);
     transform: translateY(-55%);
 }
-
-
 
 #main-header h1 {
     letter-spacing: 0;
@@ -465,7 +466,7 @@ h6 {
 }
 .experience-list p {
     margin-left: 15px;
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 15px;
 }
 
@@ -478,7 +479,7 @@ h6 {
 }
 
 .experience-sublist {
-    margin: 0 0 15px 15px;
+    margin: 0 0 15px 20px;
     font-size: 14px;
 }
 .experience-sublist li {
@@ -488,8 +489,8 @@ h6 {
 }
 .inside-sublist li {
     list-style-position: inside;
+    margin-left: -5px;
 }
-
 .column-sublist {
     margin: 0 0 15px 15px;
     font-size: 12px;
