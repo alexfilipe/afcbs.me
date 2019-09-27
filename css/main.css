@@ -17,8 +17,25 @@ b { font-weight: bold; }
 
 i { font-style: italic; }
 
+/* old link color: 697558;
+616C8C blue
+6A7599
+#007779 love blue
+D94A3D red
+B14C00
+
+46563B -> darker green [ might be good for h5]
+9F4FA2
+#BF5111
+99410E
+80360B
+7F5140
+8C5946
+
+between B14C00 or 80360B
+*/
 a:link, a:visited {
-    color: #697558;
+    color: #80360B;
     font-weight: bold;
     text-decoration: none;
 }
@@ -42,7 +59,7 @@ h2:before { content: "\\ "; }
 h3 {
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: lowercase;
     text-align: center;
 }
@@ -63,6 +80,9 @@ h4 a {
 
 h5 {
     color: #697558;
+    color: #46563B;
+    /* color: #536646; */
+    /* color: #688058; */
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 10px;
@@ -340,7 +360,7 @@ h6 {
         top: 0;
         right: 0;
         margin-right: 35%;
-        margin-top: 35px;
+        margin-top: 45px;
     }
     #main-header h1 {
         position: absolute;
@@ -360,8 +380,8 @@ h6 {
         width: 100%;
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: 10px;
-        padding-bottom: 25px;
+        padding-top: 15px;
+        padding-bottom: 30px;
         z-index: 99999;
     }
     #sections {
@@ -440,7 +460,6 @@ h6 {
 .skills h3 {
     margin-bottom: 5px;
 }
-
 .experience-list > li {
     margin-bottom: 30px;
 }
@@ -460,7 +479,7 @@ h6 {
 
 .experience-sublist {
     margin: 0 0 15px 15px;
-    font-size: 13px;
+    font-size: 14px;
 }
 .experience-sublist li {
     margin-top: 0;
@@ -485,27 +504,32 @@ h6 {
 .skill-list {
     margin-bottom: 15px;
 }
-.skill-list .col-sm-1 {
-    padding-left: 0;
-}
 
-.lang-label { font-size:  12px; color: #697558; }
+
+.lang-label { font-size: 14px; color: #697558; }
 
 .level-bars {
     text-align: right;
 }
 
 @media(max-width: 736px) {
-    .experience h4, h5, h6 { font-size: 13px; }
+    .experience h4 { font-size: 16px; }
+    .experience h5 { font-size: 16px; }
+    .experience h6 { font-size: 14px; }
     .period {
-        font-size: 12px;
+        font-size: 14px;
+        float: none;
+        display: inline;
+    }
+    .period:before {
+        content: "\\ ";
     }
 
 }
 
 @media(max-width: 714px) {
     .experience h5 {
-        font-size: 12px;
+        font-size: 14px;
     }
     .period {
         line-height: 22px;
@@ -513,8 +537,6 @@ h6 {
     h5 .period {
         line-height: 15px;
     }
-
-
 }
 
 @media(max-width: 685px) {
@@ -538,16 +560,11 @@ h6 {
         float: none;
         text-align: left;
         line-height: 17px;
-        font-size: 12px;
+        font-size: 13px;
     }
-    .period:before {
-        content: "\\ ";
-    }
-
 }
 
 @media(max-width: 574px) {
-
     .skills h4 {
         font-size: 16px;
         margin-bottom: 5px;
@@ -555,6 +572,7 @@ h6 {
     .skill-list {
         font-size: 14px;
     }
+    .lang-label { font-size: 12px; }
 
 }
 
@@ -568,6 +586,7 @@ h6 {
     }
     .period {
         display: block;
+        margin: 2px 0 0 0 ;
     }
     h5 .period {
         display:  inline;
@@ -650,19 +669,22 @@ h6 {
 
 .music .experience-sublist li {
     margin: 0;
+    font-size: 13px;
 }
 
 .music-videos {
+    margin: 0 -5px;
     margin-top: 10px;
-    font-size: 12px !important;
+    font-size: 12px;
 }
 .music-videos p {
     margin-top: 10px;
 }
-
-.music > section {
-    margin-bottom: 10px !important;
+.music-videos li {
+    padding: 0 5px;
 }
+
+
 .music h4 {
     margin-bottom: 5px;
 }
@@ -676,13 +698,11 @@ h6 {
     margin-right: 20px;
     margin-bottom: 0;
 }
-
 @media (max-width: 701px) {
     .conducting p {
         margin-left: 0;
     }
 }
-
 @media (max-width: 578px) {
     .piano .experience-sublist {
         font-size: 12px;
@@ -714,7 +734,6 @@ h6 {
         display: inline-block;
     }
 }
-
 @media (max-width: 400px) {
     .piano .img-highlights {
         text-align: left;

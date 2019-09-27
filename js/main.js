@@ -19,5 +19,6 @@ window.onload = function() {
             if (y > stop) sidebar.className = "fixed";
             else sidebar.className = "";
         }
+        else sidebar.className = "";
     }
 }
