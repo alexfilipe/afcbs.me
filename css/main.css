@@ -1,5 +1,19 @@
 /* Global Styles */
+/* html {
+    -moz-osx-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+@-moz-document url-prefix() {
+    body {
+        font-weight: 400 !important;
+    }
+} */
+
 body {
+    font-weight: normal;
+    font-style: normal;
     font-family: 'Fira Code', 'Roboto Mono', 'Menlo', 'Courier', 'Courier New', monospace;
     font-size: 16px;
     /*background: rgb(105, 117, 88);*/
@@ -11,6 +25,7 @@ body {
 p {
     margin-bottom: 20px;
     line-height: 1.2;
+    font-weight: 400;
 }
 
 b { font-weight: bold; }
@@ -48,7 +63,7 @@ a:hover {
 
 h2 {
     color: #1a1d16;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 20px;
     font-size: 24px;
     text-transform: lowercase;
@@ -57,7 +72,7 @@ h2 {
 h2:before { content: "\\ "; }
 
 h3 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
     margin-bottom: 20px;
     text-transform: lowercase;
@@ -66,16 +81,16 @@ h3 {
 
 h3:before { content: "---- "; font-weight: normal; }
 h3:after { content: " ----"; font-weight: normal; }
-/*h3:after { content: " ---"; font-weight: normal; }*/
 
 h4 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     margin-bottom: 0;
 }
 
 h4 a {
     color: #0f0f0f !important;
+    font-weight: 600 !important;
 }
 
 h5 {
